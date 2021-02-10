@@ -1,0 +1,77 @@
+package sample;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Pane pane = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+        TilePane layout = new TilePane();
+        for(int i = 0; i < 40; i++){
+            Button button = new Button(i + "0");
+            layout.getChildren().add(button);
+        }
+
+        Button buttonTest = new Button("Langer Text und weiter");
+        layout.getChildren().add(buttonTest);
+
+        primaryStage.setTitle("TilePane FXML");
+        primaryStage.setScene(new Scene(layout));
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+
+
+-------------------------------------
+
+
+package sample;
+
+
+import javafx.fxml.Initializable;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Controller implements Initializable {
+
+    
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+}
+
+
+-------------------------------------------
+
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane>
+
+</BorderPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
