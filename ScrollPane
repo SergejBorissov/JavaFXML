@@ -23,6 +23,8 @@ public class Main extends Application {
         primaryStage.setTitle("ScrollPane FXML");
         primaryStage.setMaxWidth(200);
         primaryStage.setMaxHeight(200);
+        
+        // ScrollPane wird hier bei setScene implementiert
         primaryStage.setScene(new Scene(new ScrollPane(layout)));
         primaryStage.show();
     }
