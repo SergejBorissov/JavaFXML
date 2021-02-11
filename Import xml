@@ -1,0 +1,7 @@
+Import innerhalb einer XML Datei (z.B. sample.fxml) wird durch die folgende Syntax realisiert:
+
+<?import javafx.xxx.yyy.zzz?>
+
+z.B. der Import eines AnchorPane:
+
+<?import javafx.scene.layout.AnchorPane?>
